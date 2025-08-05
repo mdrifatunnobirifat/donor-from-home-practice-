@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Donation</title>
+    <link  rel="stylesheet"  href="../css/donor.css">
+    <style>
+        
+    </style>
+   </head>
+   <body>
+    <form  onsubmit="return handlesubmit();">
+    <center>
+        <table><tr>
+           <td><h1 style="font-weight: bold;" style="color: black;" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" align="center">Donor Infromation</h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>First Name</label><br>
+                    <input type="text" id="f_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Last Name</label><br>
+                   <input type="text" id="l_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label><br>
+                    <input type="text" id="address">
+                </td>
+            </tr>
+            <tr>
+             <td><label>city</label><br>
+                 <input type="text" id="city"></td>
+            </tr>
+            <tr>
+                <td><label>state</label><br>
+                    <select id="city">
+                    <option value="0">Choose one</option>
+                    <option value="1">Rajshahi</option>
+                    <option value="2">Naogaon</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Phone</label><br>
+                    <input type="number" id="phone"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label><br>
+                    <input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label>Create Password(min 8 characters)</label><br>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Confirm Password</label><br>
+                    <input type="password" id="c_password"></td>
+            </tr>
+            <tr>
+                <td><label>Donation</label><br>
+                    <input type="radio" name="des" id="donation">none
+                    <input type="radio" name="des" id="donation">500BDt
+                    <input type="radio" name="des"id="donation">1000 BDT
+                    <input type="radio" name="des" id="donation">2000 BDT
+                    <input type="radio" name="des" id="donation">3000 BDt
+                    <input type="radio" name="des" id="donation">other
+                </td>
+            </tr>
+            <tr>
+                <td><label>Other amount</label><br>
+                    <input type="number" id="o_amount"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">I am interested in giving on a regular basis.</td><br>
+            </tr>
+            <tr>
+                <td><label style="color: brown;">Additional informtaion</label><br>
+                   <input type="checkbox" >I would like my gift to reamin anonoyumous<br>
+                   <input type="checkbox" >My employer offers a matching gift program<br>
+                   <input type="checkbox" >Please don not send a thank you letter
+                </td><br>
+            </tr>
+            <tr>
+                <td><label>Comments</label>
+                <textarea name="comments"></textarea></td>
+            </tr>
+            
+        </table>
+        <script src="../JS/donor.js"></script>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        </center>
+    </form>
+   </body>
+</html>
